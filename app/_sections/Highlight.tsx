@@ -17,24 +17,25 @@ const Highlight = () => {
                 </div>
 
                 <div className='flex flex-col items-center justify-center w-full h-full bg-gradient-to-b from-purple-gradient-start to-purple-gradient-end z-20'>
-                    <div className='flex flex-col px-10 pt-32 pb-10 w-full h-full gap-7 justify-center'>
-                        <div>
+                    <div className='flex flex-col px-10 pt-32 pb-10 w-full h-full gap-7 justify-center md:flex-row md:h-fit'>
+                        <div className='flex md:flex-2'>
                             <ArtistCard hero='images/avatars/image_one.png' name='Keepitreal' sales={{
                                 amount: 100,
                                 currency: 'ETH'
                             }} />
                         </div>
+
                         <div className='md:hidden'>
                             <h1 className='text-white text-3xl font-semibold'>
                                 Magic Mashrooms
                             </h1>
                         </div>
 
-                        <div className='bg-gray-treansparent w-full p-7 rounded-xl gap-2'>
+                        <div className='bg-gray-treansparent w-full p-7 rounded-xl gap-2 md:flex-1'>
                             <h2 className='text-xs font-normal text-white'>
                                 Auction ends in:
                             </h2>
-                            <div className='flex justify-between'>
+                            <div className='flex justify-between md:w-fit'>
                                 <div>
                                     <span className='text-white text-3xl font-semibold'>
                                         59
@@ -62,7 +63,7 @@ const Highlight = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className='pt-10'>
+                            <div className='pt-10 md:flex md:flex-col md:gap-7'>
                                 <h1 className='hidden md:block text-white text-3xl font-semibold'>
                                     Magic Mashrooms
                                 </h1>

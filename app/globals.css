@@ -45,6 +45,7 @@
   .text-color {
     @apply dark:text-white
   }
+
   .scale {
     @apply hover:scale-110 ease-in-out duration-200 cursor-pointer
   }

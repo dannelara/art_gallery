@@ -3,12 +3,12 @@ import React from 'react';
 const CollectionCard = ({ author, title, mainImageSrc, subSrcs }: { author: { img: string, name: string }, title: string, mainImageSrc: string, subSrcs: string[] }) => {
     return (
         <div className='flex flex-col gap-2 items-center max-w-[20.813rem] justify-center'>
-            <div className='h-[20.625rem] aspect-square overflow-hidden rounded-xl scale'>
+            <div className='h-[20.625rem] aspect-square overflow-hidden rounded-xl md:scale'>
                 <img className='h-full w-full' src={mainImageSrc} alt={mainImageSrc + title} loading='lazy' />
             </div>
             <div className='flex gap-4 w-full'>
                 {subSrcs.slice(0, 2).map((src, i: number) =>
-                    <div key={src} className='h-24 aspect-square rounded-2xl overflow-hidden scale'>
+                    <div key={src} className='h-24 aspect-square rounded-2xl overflow-hidden md:scale'>
                         <img className='h-full w-full' src={src} alt={`${i}-${src}`} loading='lazy' />
                     </div>)
                 }

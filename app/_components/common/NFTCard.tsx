@@ -2,7 +2,7 @@ import React from 'react';
 
 const NFTCard = ({ img, title, creator, price }: { img: string, title: string, creator: { img: string, name: string }, price: { price: number, highestBid: number, currency: string } }) => {
     return (
-        <div className='max-w-sm overflow-hidden rounded-xl flex flex-col scale'>
+        <div className='max-w-sm overflow-hidden rounded-xl flex flex-col md:scale'>
             <div className='flex flex-1'>
                 <img className='h-full w-full' src={img} alt="wdadwd" loading='lazy' />
             </div>
