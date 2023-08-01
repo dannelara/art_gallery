@@ -4,6 +4,7 @@ import React from "react";
 type Props = {
     children: JSX.Element | JSX.Element[];
     padding?: boolean;
+    marginBt?: boolean;
 }
 
 const Section = ({

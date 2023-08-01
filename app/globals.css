@@ -57,4 +57,11 @@
   .section-subHeading {
     @apply text-color text-base font-normal 
   }
+  .link-secondary {
+    @apply text-gray-paper text-base font-normal
+  }
+
+  .divider-bottom {
+    @apply border-[1px] border-b border-gray-paper
+  }
 }

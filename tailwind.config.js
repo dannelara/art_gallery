@@ -39,6 +39,7 @@ module.exports = {
       colors: {
         "gray-600": "hsla(0, 0%, 23%, 1)",
         "purple": "hsla(266, 100%, 67%, 1)",
+        "gray-paper": "#CCC"
       },
  
     },

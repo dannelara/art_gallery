@@ -63,7 +63,7 @@ const Highlight = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className='pt-10 md:flex md:flex-col md:gap-7'>
+                            <div className='pt-10 md:flex md:flex-col md:gap-7 md:w-fit'>
                                 <h1 className='hidden md:block text-white text-3xl font-semibold'>
                                     Magic Mashrooms
                                 </h1>

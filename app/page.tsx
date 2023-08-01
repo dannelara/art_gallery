@@ -4,6 +4,9 @@ import TopCreators from '_sections/TopCreators'
 import Categories from '_sections/Categories'
 import Discover from '_sections/Discover'
 import Highlight from '_sections/Highlight'
+import HowItWorks from '_sections/HowItWorks'
+import Subscribe from '_sections/Subscribe'
+import Footer from '_sections/Footer'
 
 export default function Home() {
   return (
@@ -14,6 +17,9 @@ export default function Home() {
       <Categories />
       <Discover />
       <Highlight />
+      <HowItWorks />
+      <Subscribe />
+      <Footer />
     </main >
   )
 }

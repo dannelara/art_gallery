@@ -1,6 +1,6 @@
 import * as React from "react"
 import { SVGProps } from "react"
-const CartIcon = (props: SVGProps<SVGSVGElement>) => (
+const CardIcon = (props: SVGProps<SVGSVGElement>) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width={276}
@@ -406,4 +406,4 @@ const CartIcon = (props: SVGProps<SVGSVGElement>) => (
         </defs>
     </svg>
 )
-export default CartIcon
+export default CardIcon
