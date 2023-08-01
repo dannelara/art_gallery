@@ -13,7 +13,6 @@ const Footer = () => {
                 <div className='flex flex-col py-10 gap-5 md:flex-row md:gap-8'>
                     <div className='flex flex-col gap-3'>
                         <div className='flex gap-3'>
-                            <StoreIcon />
                             <h1 className='text-base md:text-xl text-white font-semibold'>TriVisionArt</h1>
                         </div>
                         <div className='flex flex-col gap-2'>

@@ -20,7 +20,7 @@ const Discover = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full grid grid-cols-1 xmd:grid-cols-2 md:grid-cols-3 gap-5 my-10'>
+                <div className='mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 my-10 w-full'>
                     <ArtCard title='Eden' creator={{ img: "/images/new/13.png", name: "Rahiros" }} img='/images/new/12.png' details={{
                         createdAt: new Date(new Date().setFullYear(new Date().getFullYear() - 10)),
 

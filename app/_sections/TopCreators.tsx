@@ -11,7 +11,7 @@ const TopCreators = () => {
                 <div className='flex flex-col gap-2'>
                     <h1 className='section-heading'>Top creators</h1>
                     <div className='flex justify-between'>
-                        <span className='section-subHeading' >Checkout Top Rated Creators on the NFT Marketplace</span>
+                        <span className='section-subHeading' >Checkout Top Rated Creators</span>
                         <div className='hidden xmd:block'>
                             <Button text='View Rankings' type='PRIMARY' icon={<RocketPurpleIcon />} variant='OUTLINED' />
                         </div>
