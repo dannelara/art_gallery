@@ -7,7 +7,7 @@ const CollectionCard = ({ author, title, mainImageSrc, subSrcs }: { author: { im
                 <img className='h-full w-full' src={mainImageSrc} alt={mainImageSrc + title} />
             </div>
             <div className='flex gap-4 w-full'>{subSrcs.slice(0, 2).map((src, i: number) =>
-                <div className='h-24 w-1/3 rounded-2xl overflow-hidden scale'><img className='h-full w-full' src={src} alt={`${i}-${src}`} /></div>)}
+                <div key={src} className='h-24 w-1/3 rounded-2xl overflow-hidden scale'><img className='h-full w-full' src={src} alt={`${i}-${src}`} /></div>)}
                 <div className='h-24 w-1/3 rounded-2xl overflow-hidden bg-purple flex items-center justify-center'>
                     <span className='text-color text-base font-semibold'>{subSrcs.length}+</span>
                 </div>
