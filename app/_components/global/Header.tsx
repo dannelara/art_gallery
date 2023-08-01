@@ -13,7 +13,7 @@ const Header = () => {
     const { theme, toggleTheme } = useGlobalState()
 
     return (
-        <div className='bg-white dark:bg-gray-600 px-12 py-[.95rem] md:px-12 md:py-5 flex justify-between items-center'>
+        <div className='bg-white dark:bg-gray-600  px-6 py-[.95rem] md:px-12 md:py-5 flex justify-between items-center'>
             <div className='flex gap-3 items-center'>
                 <StoreIcon />
                 <h1 className='text-base md:text-xl text-black dark:text-white font-semibold'>NFT Marketplace</h1>
