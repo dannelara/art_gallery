@@ -1,6 +1,5 @@
 import PageContent from '_components/global/PageContent';
 import React from 'react';
-import { notFound } from 'next/navigation'
 import CustomImage from '_components/common/Image';
 import { Artist } from '../../../types';
 import Padding from '_components/utils/Padding';
@@ -10,6 +9,7 @@ import Instagram from '_assets/icons/global/Instagram';
 import Discrod from '_assets/icons/global/Discrod';
 import Tab from '_components/common/Tab';
 import ArtCard from '_components/common/ArtCard';
+
 const page = ({ params }: { params: { id: string } }) => {
     const { id } = params;
 
@@ -51,7 +51,7 @@ const page = ({ params }: { params: { id: string } }) => {
                                 <span className='text-color text-xl font-semibold'>
                                     {artist.details.images.length}
                                 </span>
-                                <p className='text-color text-base font-normal '>
+                                <p className='text-color text-base font-normal'>
                                     Images
                                 </p>
                             </div>
@@ -92,7 +92,7 @@ const page = ({ params }: { params: { id: string } }) => {
                 <Padding>
                     <div className='divider-bottom'></div>
                     <div className='flex flex-col w-full gap-7'>
-                        <div className='flex justify-between '>
+                        <div className='flex justify-between'>
                             <Tab text='Images' number={artist.details.images.length} />
                         </div>
                     </div>

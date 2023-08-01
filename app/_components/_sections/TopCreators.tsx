@@ -25,7 +25,7 @@ const TopCreators = ({ artists = [] }: Props) => {
                 <div className='w-full grid grid-cols-1 xmd:grid-cols-2 md:grid-cols-4 gap-5 my-10'>
                     {
                         artists.slice(0, 12).map((artist, index) => (
-                            <ArtistCard key={artist.id} hero={artist.hero} name={artist.name} details={artist.details} id={artist.id} />
+                            <ArtistCard key={artist.id} hero={artist.hero} name={artist.name} details={artist.details} id={artist.id} createdAt={artist.createdAt} followers={artist.followers} monthlyUpload={artist.monthlyUpload} />
                         ))
                     }
                 </div>
