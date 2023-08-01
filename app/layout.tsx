@@ -1,8 +1,10 @@
+import { GlobalStatePovider } from '_global/GlobalState'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Space_Mono } from 'next/font/google'
+import Header from './_components/global/Header'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Space_Mono({ subsets: ['latin'], weight: ['400', "700"] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,9 +16,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+  return (<GlobalStatePovider>
+    <html lang="en" className="dark">
+      <body className={inter.className}>
+        <Header />
+        {children}
+      </body>
     </html>
-  )
+  </GlobalStatePovider>)
 }
