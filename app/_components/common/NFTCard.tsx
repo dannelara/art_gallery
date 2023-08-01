@@ -4,7 +4,7 @@ const NFTCard = ({ img, title, creator, price }: { img: string, title: string, c
     return (
         <div className='max-w-sm overflow-hidden rounded-xl flex flex-col scale'>
             <div className='flex flex-1'>
-                <img className='h-full w-full' src={img} alt="" />
+                <img className='h-full w-full' src={img} alt="wdadwd" loading='lazy' />
             </div>
 
             <div className='bg-gray-500'>
@@ -14,7 +14,8 @@ const NFTCard = ({ img, title, creator, price }: { img: string, title: string, c
                         <h1 className='text-white text-xl font-semibold'>{title}</h1>
 
                         <div className='flex w-full gap-3'>
-                            <div className='h-6 overflow-hidden rounded-xl'><img className='w-full h-full' src={creator.img} alt={creator.img + creator.name} /></div>
+                            <div className='h-6 aspect-square overflow-hidden rounded-xl'>
+                                <img className='w-full h-full' src={creator.img} alt={creator.img + creator.name} loading='lazy' /></div>
                             <span className='text-white'>{creator.name}</span>
                         </div>
                     </div>
