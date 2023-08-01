@@ -17,7 +17,7 @@ const Highlight = () => {
                 </div>
 
                 <div className='flex flex-col items-center justify-center w-full h-full bg-gradient-to-b from-purple-gradient-start to-purple-gradient-end z-20'>
-                    <div className='flex flex-col px-10 pt-32 pb-10 w-full h-full gap-7 justify-center md:flex-row md:h-fit'>
+                    <div className='flex flex-col px-6 md:px-12 pt-32 pb-10 w-full h-full gap-7 justify-center md:flex-row md:h-fit'>
                         <div className='flex md:flex-2'>
                             <ArtistCard hero='images/avatars/image_one.png' name='Keepitreal' sales={{
                                 amount: 100,

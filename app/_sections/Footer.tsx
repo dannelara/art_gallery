@@ -9,7 +9,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='flex h-auto w-full min-h-[30rem] bg-gray-500'>
-            <div className='w-full mx-12'>
+            <div className='w-full mx-6 md:mx-12'>
                 <div className='flex flex-col py-10 gap-5 md:flex-row md:gap-8'>
                     <div className='flex flex-col gap-3'>
                         <div className='flex gap-3'>
