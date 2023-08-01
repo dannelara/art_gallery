@@ -18,25 +18,17 @@ const TopCreators = () => {
                     </div>
                 </div>
                 <div className='w-full grid grid-cols-1 xmd:grid-cols-2 md:grid-cols-4 gap-5 my-10'>
-                    <ArtistCard hero='images/avatars/image_one.png' name='Keepitreal' sales={{
-                        amount: 100,
+                    <ArtistCard hero='/images/new/11.jpg' name='Salomon' sales={{
+                        amount: 500,
                         currency: 'ETH'
                     }} />
-                    <ArtistCard hero='images/avatars/image_one.png' name='Keepitreal' sales={{
-                        amount: 100,
+                    <ArtistCard hero='/images/new/13.png' name='Rahiros' sales={{
+                        amount: 230,
                         currency: 'ETH'
                     }} />
 
-                    <ArtistCard hero='images/avatars/image_one.png' name='Keepitreal' sales={{
-                        amount: 100,
-                        currency: 'ETH'
-                    }} />
-                    <ArtistCard hero='images/avatars/image_one.png' name='Keepitreal' sales={{
-                        amount: 100,
-                        currency: 'ETH'
-                    }} />
-                    <ArtistCard hero='images/avatars/image_one.png' name='Keepitreal' sales={{
-                        amount: 100,
+                    <ArtistCard hero='/images/new/1.png' name='DayBreaker' sales={{
+                        amount: 200,
                         currency: 'ETH'
                     }} />
                 </div>

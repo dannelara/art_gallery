@@ -15,8 +15,7 @@ const Header = () => {
     return (
         <div className='bg-white dark:bg-gray-600  px-6 py-[.95rem] md:px-12 md:py-5 flex justify-between items-center'>
             <div className='flex gap-3 items-center'>
-                <StoreIcon />
-                <h1 className='text-base md:text-xl text-black dark:text-white font-semibold'>NFT Marketplace</h1>
+                <h1 className='text-base md:text-xl text-black dark:text-white font-semibold'>TriVisionArt</h1>
             </div>
 
 
@@ -28,14 +27,14 @@ const Header = () => {
                 </div>
                 <ul className='hidden md:flex items-center'>
                     <li>
-                        <Link href={"#"} className='link'>Marketplace</Link>
+                        <Link href={"#"} className='link'>Artists</Link>
                     </li>
                     <li>
                         <Link href={"#"} className='link'>Rankings</Link>
 
                     </li>
                     <li>
-                        <Link href={"#"} className='link'>Connect a wallet</Link>
+                        <Link href={"#"} className='link'>Explore</Link>
                     </li>
                 </ul>
                 <div className='hidden md:block'>

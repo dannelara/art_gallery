@@ -1,8 +1,12 @@
 import React from 'react';
 
-const NFTCard = ({ img, title, creator, price }: { img: string, title: string, creator: { img: string, name: string }, price: { price: number, highestBid: number, currency: string } }) => {
+const ArtCard = ({ img, title, creator, details }: {
+    img: string, title: string, creator: { img: string, name: string }, details: {
+        createdAt: Date, monthlyUpload: number
+    }
+}) => {
     return (
-        <div className='bg-gray-500 max-w-sm overflow-hidden rounded-xl flex flex-col md:scale'>
+        <div className='bg-gray-500 overflow-hidden rounded-xl flex flex-col md:scale'>
             <div className='flex flex-1'>
                 <img className='h-full w-full' src={img} alt="wdadwd" loading='lazy' />
             </div>
@@ -23,12 +27,12 @@ const NFTCard = ({ img, title, creator, price }: { img: string, title: string, c
 
                 <div className='flex flex-2 py-6 px-7 justify-between'>
                     <div className='flex flex-col'>
-                        <span className='text-gray-500 font-normal text-xs'>Price</span>
-                        <span className='text-white text-base font-normal'>{price.price} {price.currency}</span>
+                        <span className='text-gray-500 font-normal text-xs'>Active since</span>
+                        <span className='text-white text-base font-normal'>{details.createdAt.toDateString()}</span>
                     </div>
                     <div className='flex flex-col'>
-                        <span className='text-gray-500 font-normal text-xs'>Highest Bid</span>
-                        <span className='text-white text-base font-normal'>{price.highestBid} {price.currency}</span>
+                        <span className='text-gray-500 font-normal text-xs'>Monthly uploads</span>
+                        <span className='text-white text-base font-normal'>{details.monthlyUpload}</span>
                     </div>
                 </div>
             </div>
@@ -37,4 +41,4 @@ const NFTCard = ({ img, title, creator, price }: { img: string, title: string, c
     );
 };
 
-export default NFTCard;
+export default ArtCard;

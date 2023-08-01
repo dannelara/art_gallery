@@ -18,14 +18,13 @@ const Categories = () => {
                     <h1 className='section-heading'>Browse Categories</h1>
                 </div>
                 <div className='w-full grid grid-cols-2 xmd:grid-cols-4 md:grid-cols-5 gap-5 my-10'>
-                    <CategoryCard title='Art' img='/images/globalImages/whale.png' icon={<BrushIcon />} />
-                    <CategoryCard title='Collectibles' img='/images/globalImages/whale.png' icon={<SwatchesIcon />} />
-                    <CategoryCard title='Music' img='/images/globalImages/whale.png' icon={<MusicIcon />} />
-                    <CategoryCard title='Photography' img='/images/globalImages/whale.png' icon={<CameraIcon />} />
-                    <CategoryCard title='Video' img='/images/globalImages/whale.png' icon={<VideoCamera />} />
-                    <CategoryCard title='Utility' img='/images/globalImages/whale.png' icon={<WandIcon />} />
-                    <CategoryCard title='Sport' img='/images/globalImages/whale.png' icon={<BasketBallIcon />} />
-                    <CategoryCard title='Virtual Worlds' img='/images/globalImages/whale.png' icon={<PlanetIcon />} />
+                    <CategoryCard title='Nature' img='/images/new/6.png' icon={<BrushIcon />} />
+                    <CategoryCard title='Animals' img='/images/new/7.png' icon={<SwatchesIcon />} />
+                    <CategoryCard title='Travel' img='/images/new/5.png' icon={<MusicIcon />} />
+                    <CategoryCard title='Technology' img='/images/new/1.png' icon={<CameraIcon />} />
+                    <CategoryCard title='Abstract' img='/images/new/11.jpg' icon={<WandIcon />} />
+                    <CategoryCard title='People' img='/images/new/3.png' icon={<BasketBallIcon />} />
+                    <CategoryCard title='Virtual' img='/images/new/14.png' icon={<PlanetIcon />} />
                 </div>
             </div>
         </Section>

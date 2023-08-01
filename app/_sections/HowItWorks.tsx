@@ -8,8 +8,8 @@ const HowItWorks = () => {
         <Section padding>
             <div className='flex flex-col'>
                 <div className='flex flex-col gap-2'>
-                    <h1 className='section-heading'>How it works</h1>
-                    <span className='section-subHeading'>Find out how to get started</span>
+                    <h1 className='section-heading'>Share Your Art!</h1>
+                    <span className='section-subHeading'>Learn how to get started</span>
                 </div>
             </div>
 

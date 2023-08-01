@@ -14,10 +14,10 @@ const Footer = () => {
                     <div className='flex flex-col gap-3'>
                         <div className='flex gap-3'>
                             <StoreIcon />
-                            <h1 className='text-base md:text-xl text-white font-semibold'>NFT Marketplace</h1>
+                            <h1 className='text-base md:text-xl text-white font-semibold'>TriVisionArt</h1>
                         </div>
                         <div className='flex flex-col gap-2'>
-                            <span className='text-gray-paper'>NFT marketplace UI created with Anima for Figma.</span>
+                            <span className='text-gray-paper'>Unleash Your Artistic Vision - Join and Share Your Masterpieces!</span>
                             <span className='text-gray-paper'>Join our community</span>
                             {/** MEDIA */}
                             <div className='flex gap-2 py-4'>
@@ -26,13 +26,12 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className='flex flex-col'>
                         <h1 className='text-base md:text-xl text-white font-semibold'>Explore</h1>
                         <ul className='flex flex-col gap-2 py-2'>
                             <li>
                                 <Link className='link-secondary' href="#">
-                                    Marketplace
+                                    Artists
                                 </Link>
                             </li>
                             <li>
@@ -42,7 +41,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <Link className='link-secondary' href="#">
-                                    Connect a wallet
+                                    Explore
                                 </Link>
                             </li>
                         </ul>

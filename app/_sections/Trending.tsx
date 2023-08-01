@@ -11,9 +11,9 @@ const Trending = () => {
                     <span className='section-subHeading'>Checkout our weekly updated trending collection.</span>
                 </div>
                 <div className='mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3'>
-                    <CollectionCard author={{ img: "/images/globalImages/cat.png", name: "MrCat" }} mainImageSrc='/images/globalImages/dog.png' title='DSGN Animals' subSrcs={["/images/globalImages/cat.png", "/images/globalImages/robot.png", "/images/globalImages/cat.png", "/images/globalImages/cat.png"]} />
-                    <CollectionCard author={{ img: "/images/globalImages/cat.png", name: "Shroom" }} mainImageSrc='/images/globalImages/dog.png' title='DSGN Animals' subSrcs={["/images/globalImages/robot.png", "/images/globalImages/cat.png", "/images/globalImages/cat.png", "/images/globalImages/cat.png"]} />
-                    <CollectionCard author={{ img: "/images/globalImages/robot.png", name: "BeKind2Robots" }} mainImageSrc='/images/globalImages/robot.png' title='DSGN Animals' subSrcs={["/images/globalImages/robot.png", "/images/globalImages/cat.png", "/images/globalImages/cat.png", "/images/globalImages/cat.png"]} />
+                    <CollectionCard author={{ img: "/images/new/11.jpg", name: "Salomon" }} mainImageSrc='/images/new/2.png' title='In doors' subSrcs={["/images/new/7.png", "/images/new/11.jpg", "/images/new/5.png", "/images/globalImages/cat.png"]} />
+                    <CollectionCard author={{ img: "/images/new/13.png", name: "Rahiros" }} mainImageSrc='/images/new/8.png' title='Imagination' subSrcs={["/images/new/3.png", "/images/new/5.png", "/images/new/5.png", "/images/globalImages/cat.png"]} />
+                    <CollectionCard author={{ img: "/images/new/1.png", name: "DayBreaker" }} mainImageSrc='/images/new/14.png' title='Future' subSrcs={["/images/new/6.png", "/images/new/1.png", "/images/globalImages/cat.png"]} />
                 </div>
             </div>
         </Section>
