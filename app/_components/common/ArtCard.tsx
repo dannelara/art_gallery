@@ -7,7 +7,7 @@ const ArtCard = ({ img, title, creator, details }: {
     }
 }) => {
     return (
-        <div className='bg-gray-500 w-full overflow-hidden rounded-xl flex flex-col md:scale'>
+        <div className='bg-gray-500 w-full overflow-hidden rounded-xl flex flex-col md:scale max-w-[25rem]'>
             <div className='w-full aspect-square overflow-hidden rounded-xl relative md:scale-no-border'>
                 <CustomImage className='h-full w-full p-1 rounded-xl' src={img} alt={title} />
             </div>
@@ -27,7 +27,7 @@ const ArtCard = ({ img, title, creator, details }: {
                 <div className='flex flex-2 py-6 px-7 justify-between'>
                     <div className='flex flex-col'>
                         <span className='text-gray-500 font-normal text-xs'>Active since</span>
-                        <span className='text-white text-base font-normal'>{details.createdAt.getFullYear()}</span>
+                        <span className='text-white text-base font-normal'>{new Date(details.createdAt).getFullYear()}</span>
                     </div>
                     <div className='flex flex-col'>
                         <span className='text-gray-500 font-normal text-xs'>Monthly uploads</span>

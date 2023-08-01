@@ -1,4 +1,5 @@
 export type Artist = {
+    id: number
     hero: string
     name: string
     details: {
@@ -7,4 +8,7 @@ export type Artist = {
             title: string
         }[]
     }
+    followers: number
+    createdAt: Date
+    monthlyUpload: number
 }

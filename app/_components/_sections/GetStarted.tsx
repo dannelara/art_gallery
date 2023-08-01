@@ -1,6 +1,6 @@
 import React from 'react';
-import Section from '../_components/common/Section';
-import Button from '../_components/common/Button';
+import Section from '../common/Section';
+import Button from '../common/Button';
 import CustomImage from '_components/common/Image';
 import Link from 'next/link';
 

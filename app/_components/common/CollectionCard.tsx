@@ -3,8 +3,8 @@ import CustomImage from './Image';
 
 const CollectionCard = ({ author, title, mainImageSrc, subSrcs }: { author: { img: string, name: string }, title: string, mainImageSrc: string, subSrcs: string[] }) => {
     return (
-        <div className='flex flex-col gap-4 items-center justify-center'>
-            <div className='w-full aspect-square overflow-hidden rounded-xl relative md:scale'>
+        <div className='flex flex-col gap-4 items-center justify-center max-w-[25rem]'>
+            <div className='w-full aspect-square overflow-hidden rounded-xl relative md:scale '>
                 <CustomImage className='h-full w-full' src={mainImageSrc} alt={mainImageSrc} />
             </div>
             <div className='flex gap-4 w-full'>

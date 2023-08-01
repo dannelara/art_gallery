@@ -1,6 +1,6 @@
 import React from 'react';
-import Section from '../_components/common/Section';
-import CollectionCard from '../_components/common/CollectionCard';
+import Section from '../common/Section';
+import CollectionCard from '../common/CollectionCard';
 
 const Trending = () => {
     return (

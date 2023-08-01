@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from '../_components/common/Section';
+import Section from '../common/Section';
 import ArtistCard from '_components/common/ArtistCard';
 import Button from '_components/common/Button';
 import CustomImage from '_components/common/Image';
@@ -15,17 +15,21 @@ const Highlight = () => {
                         <CustomImage className='w-full h-full' alt='COVER_BIG' src='/images/new/7.png' />
                     </picture>
                 </div>
-                <div className='flex flex-col items-center justify-center w-full h-full bg-gradient-to-b from-black-gradient-start to-black-gradient-end z-20'>
+                <div className='flex flex-col items-center justify-center w-full h-full dark-gradient z-20'>
                     <div className='flex flex-col px-6 md:px-12 pt-32 pb-10 w-full h-full gap-7 justify-center md:flex-row md:h-fit'>
                         <div className='flex md:flex-1'>
-                            <ArtistCard hero='/images/new/11.jpg' name='Salomon' details={{
+                            <ArtistCard id={1} hero='/images/new/11.jpg' name='Salomon' details={{
                                 images: [
                                     { src: '/images/new/7.png', title: 'Eden' },
                                     { src: '/images/new/7.png', title: 'Eden' },
                                     { src: '/images/new/7.png', title: 'Eden' },
                                     { src: '/images/new/7.png', title: 'Eden' },
                                 ]
-                            }} />
+                            }}
+                                followers={313}
+                                createdAt={new Date()}
+                                monthlyUpload={10}
+                            />
                         </div>
 
                         <div className='md:hidden'>

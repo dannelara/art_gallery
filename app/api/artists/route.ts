@@ -1,47 +1,9 @@
 import { NextResponse } from "next/server"
-import { Artist } from "../../../types";
+import { artists } from "../../../mockData"
 
-const mockArtists: Artist [] = [
-  {
-    hero: "/images/new/11.jpg",
-    name: "Salomon",
-    details: {
-      images: [
-        { src: "/images/new/7.png", title: "Eden" },
-        { src: "/images/new/7.png", title: "Eden" },
-        { src: "/images/new/7.png", title: "Eden" },
-        { src: "/images/new/7.png", title: "Eden" },
-      ],
-    },
-  },
-  {
-    hero: "/images/new/13.png",
-    name: "Rahiros",
-    details: {
-      images: [
-        { src: '/images/new/7.png', title: 'Eden' },
-        {src: '/images/new/7.png', title: 'Eden' },
-        { src: '/images/new/7.png', title: 'Eden' },
-        { src: '/images/new/7.png', title: 'Eden' },
-      ],
-    },
-  },
-  {
-    hero: "/images/new/1.png",
-    name: "Jane Smith",
-    details: {
-      images: [
-        { src: '/images/new/7.png', title: 'Eden' },
-        { src: '/images/new/7.png', title: 'Eden' },
-        { src: '/images/new/7.png', title: 'Eden' },
-        { src: '/images/new/7.png', title: 'Eden' },
-      ],
-    },
-  },
-];
-
-const GET = () => {
-    return NextResponse.json(mockArtists)
+const GET = async () => {
+    await new Promise((resolve) => setTimeout(resolve, 1000))
+    return NextResponse.json(artists)
 }
 
 export { GET }
