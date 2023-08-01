@@ -3,6 +3,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Space_Mono } from 'next/font/google'
 import Header from './_components/global/Header'
+import Footer from '_sections/Footer'
 
 const inter = Space_Mono({ subsets: ['latin'], weight: ['400', "700"] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   </GlobalStatePovider>)

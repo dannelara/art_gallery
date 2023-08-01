@@ -1,5 +1,5 @@
 import Button from '_components/common/Button';
-import Input from '_components/common/Input';
+import Input from '_components/global/Input';
 import Section from '_components/common/Section';
 import React from 'react';
 

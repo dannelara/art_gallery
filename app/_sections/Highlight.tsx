@@ -2,7 +2,6 @@ import React from 'react';
 import Section from '../_components/common/Section';
 import ArtistCard from '_components/common/ArtistCard';
 import Button from '_components/common/Button';
-import EyeIcon from '_assets/icons/global/EyeIcon';
 import CustomImage from '_components/common/Image';
 
 const Highlight = () => {
@@ -19,9 +18,13 @@ const Highlight = () => {
                 <div className='flex flex-col items-center justify-center w-full h-full bg-gradient-to-b from-black-gradient-start to-black-gradient-end z-20'>
                     <div className='flex flex-col px-6 md:px-12 pt-32 pb-10 w-full h-full gap-7 justify-center md:flex-row md:h-fit'>
                         <div className='flex md:flex-1'>
-                            <ArtistCard hero='/images/new/11.jpg' name='Salomon' sales={{
-                                amount: 500,
-                                currency: 'ETH'
+                            <ArtistCard hero='/images/new/11.jpg' name='Salomon' details={{
+                                images: [
+                                    { src: '/images/new/7.png', title: 'Eden' },
+                                    { src: '/images/new/7.png', title: 'Eden' },
+                                    { src: '/images/new/7.png', title: 'Eden' },
+                                    { src: '/images/new/7.png', title: 'Eden' },
+                                ]
                             }} />
                         </div>
 
@@ -49,7 +52,7 @@ const Highlight = () => {
                                 <h1 className='hidden md:block text-white text-3xl font-semibold'>
                                     Gazer_1
                                 </h1>
-                                <Button text='See Art' type='SECONDARY' variant='FILLED' icon={<EyeIcon />} />
+                                <Button text='See Art' type='SECONDARY' variant='FILLED' />
                             </div>
                         </div>
 

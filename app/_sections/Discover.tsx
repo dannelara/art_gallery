@@ -2,8 +2,6 @@ import React from 'react';
 import Section from '../_components/common/Section';
 import Button from '../_components/common/Button';
 import ArtCard from '../_components/common/ArtCard';
-import RocketPurpleIcon from '_assets/icons/global/RocketPurpleIcon';
-import EyeIcon from '_assets/icons/global/EyeIcon';
 
 const Discover = () => {
     return (
@@ -16,7 +14,7 @@ const Discover = () => {
                         <span className='section-subHeading'>Explore new trending arts</span>
 
                         <div className='hidden xmd:block'>
-                            <Button text='See All' type='PRIMARY' icon={<EyeIcon />} variant='OUTLINED' />
+                            <Button text='See All' type='PRIMARY' variant='OUTLINED' />
                         </div>
                     </div>
                 </div>
@@ -37,7 +35,7 @@ const Discover = () => {
 
                 </div>
                 <div className='xmd:hidden'>
-                    <Button text='See All' type='PRIMARY' icon={<RocketPurpleIcon />} variant='OUTLINED' />
+                    <Button text='See All' type='PRIMARY' variant='OUTLINED' />
                 </div>
             </div>
         </Section>
