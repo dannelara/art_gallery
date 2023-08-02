@@ -12,7 +12,7 @@ import React from 'react'
 export default function Home() {
 
   const fetchArtists = async () => {
-    const res = await fetch('http://localhost:3000/api/artists', {
+    const res = await fetch(`${process.env.BASE_URL}/api/artists`, {
       cache: 'no-cache',
     })
     return await res.json()

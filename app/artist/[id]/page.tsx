@@ -14,7 +14,7 @@ const page = ({ params }: { params: { id: string } }) => {
     const { id } = params;
 
     const fetchArtist = async () => {
-        const res = await fetch(`http://localhost:3000/api/artist?id=${id}`, {
+        const res = await fetch(`${process.env.BASE_URL}/api/artist?id=${id}`, {
             cache: 'no-cache',
         });
         return await res.json();
