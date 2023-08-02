@@ -11,7 +11,7 @@ import Tag from '_components/common/Tag';
 import ArtCard from '_components/common/ArtCard';
 import CustomLink from '_components/utils/CustomLink';
 
-const page = ({ params }: { params: { id: string } }) => {
+const Page = ({ params }: { params: { id: string } }) => {
     const { id } = params;
 
     const selectedArtwork = artworks.find((artwork) => artwork.id === Number(id));
@@ -74,4 +74,4 @@ const page = ({ params }: { params: { id: string } }) => {
     );
 };
 
-export default page;
+export default Page;

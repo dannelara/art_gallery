@@ -11,7 +11,8 @@ import Discrod from '_assets/icons/global/Discrod';
 import Tab from '_components/common/Tab';
 import ArtCard from '_components/common/ArtCard';
 import { artists } from '../../../mockData';
-const page = ({ params }: { params: { id: string } }) => {
+
+const Page = ({ params }: { params: { id: string } }) => {
     const { id } = params;
     const [selectedTab, setSelectedTab] = React.useState(0);
     // const fetchArtist = async () => {
@@ -138,4 +139,4 @@ const page = ({ params }: { params: { id: string } }) => {
     );
 };
 
-export default page;
+export default Page;
