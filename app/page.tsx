@@ -8,17 +8,17 @@ import HowItWorks from '_components/_sections/HowItWorks'
 import Subscribe from '_components/_sections/Subscribe'
 import PageContent from '_components/global/PageContent'
 import React from 'react'
-
+import { artists } from '../mockData'
 export default function Home() {
 
-  const fetchArtists = async () => {
-    const res = await fetch(`${process.env.BASE_URL}/api/artists`, {
-      cache: 'no-cache',
-    })
-    return await res.json()
-  }
+  // const fetchArtists = async () => {
+  //   const res = await fetch(`${process.env.BASE_URL}/api/artists`, {
+  //     cache: 'no-cache',
+  //   })
+  //   return await res.json()
+  // }
 
-  const artists = React.use(fetchArtists())
+  // const artists = React.use(fetchArtists())
 
   return (
     <PageContent>
