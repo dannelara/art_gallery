@@ -3,7 +3,7 @@ import Section from '../common/Section';
 import ArtistCard from '_components/common/ArtistCard';
 import Button from '_components/common/Button';
 import CustomImage from '_components/common/Image';
-
+import { artists } from '../../../mockData';
 const Highlight = () => {
     return (
         <Section>
@@ -18,18 +18,9 @@ const Highlight = () => {
                 <div className='flex flex-col items-center justify-center w-full h-full dark-gradient z-20'>
                     <div className='flex flex-col px-6 md:px-12 pt-32 pb-10 w-full h-full gap-7 justify-center md:flex-row md:h-fit'>
                         <div className='flex md:flex-1'>
-                            <ArtistCard id={1} hero='/images/new/11.jpg' name='Salomon' details={{
-                                images: [
-                                    { src: '/images/new/7.png', title: 'Eden' },
-                                    { src: '/images/new/7.png', title: 'Eden' },
-                                    { src: '/images/new/7.png', title: 'Eden' },
-                                    { src: '/images/new/7.png', title: 'Eden' },
-                                ]
-                            }}
-                                followers={313}
-                                createdAt={new Date()}
-                                monthlyUpload={10}
-                            />
+
+                            <ArtistCard id={artists[0].id} hero={artists[0].hero} name='Salomon' details={artists[0].details} followers={artists[0].followers} createdAt={artists[0].createdAt} monthlyUpload={artists[0].monthlyUpload} />
+
                         </div>
 
                         <div className='md:hidden'>

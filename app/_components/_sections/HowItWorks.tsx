@@ -14,9 +14,9 @@ const HowItWorks = () => {
             </div>
 
             <div className='w-full grid grid-cols-1 md:grid-cols-3 gap-5 my-10'>
-                <InfoCard link='#' logo={<CardIcon />} title='Setup Your Account' desc='Set up your account of choice. Connect it to the NFT market by clicking the account icon in the top right corner.' />
-                <InfoCard link='#' logo={<CardIcon />} title='Share your An Image' desc='Set up your account of choice. Connect it to the NFT market by clicking the account icon in the top right corner.' />
-                <InfoCard link='#' logo={<CardIcon />} title='Manage Your Content' desc='Set up your wallet of choice. Connect it to the NFT market by clicking the wallet icon in the top right corner.' />
+                <InfoCard link='#' logo={<CardIcon />} title='Setup Your Account' desc='Set up your account of by clicking the Getting Started button at the start of the page.' />
+                <InfoCard link='#' logo={<CardIcon />} title='Share Your Art' desc='Share your art by uploading them in your account page.' />
+                <InfoCard link='#' logo={<CardIcon />} title='Manage Your Content' desc='Manage your art and account in the account page.' />
             </div>
         </Section>
     );

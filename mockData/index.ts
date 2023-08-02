@@ -1,4 +1,7 @@
 import { Artist } from "../types";
+import { artworks } from "./artworks";
+
+
 
 const artists: Artist [] = [
     {
@@ -7,11 +10,10 @@ const artists: Artist [] = [
       name: "Salomon",
       details: {
         images: [
-          { src: "/images/new/7.png", title: "Artwork 1" },
-          { src: "/images/new/11.jpg", title: "Artwork 2" },
-          { src: "/images/new/2.png", title: "Artwork 3" },
-
-        ],
+            artworks[1],
+            artworks[5],
+            artworks[11],
+        ] ,
       },
       followers: 117,
       createdAt: new Date(new Date().setFullYear(new Date().getFullYear() - 10)),
@@ -23,12 +25,9 @@ const artists: Artist [] = [
       name: "Rahiros",
       details: {
         images: [
-          { src: '/images/new/3.png', title: 'Artwork 1' },
-          {src: '/images/new/5.png', title: 'Artwork 2' },
-          { src: '/images/new/8.png', title: 'Artwork 3' },
-          { src: '/images/new/9.png', title: 'Artwork 4' },
-          { src: '/images/new/12.png', title: 'Artwork 5' },
-
+            artworks[6],
+            artworks[2],
+            artworks[3],
         ],
       },
       followers: 336,
@@ -41,17 +40,15 @@ const artists: Artist [] = [
       name: "Jane Smith",
       details: {
         images: [
-          { src: '/images/new/6.png', title: 'Artwork 1' },
-          { src: '/images/new/14.png', title: 'Artwork 2' },
-          { src: '/images/new/7.png', title: 'Artwork 3' },
-          { src: "/images/new/1.png", title: "Artwork 4" },
+        artworks[10],
+        artworks[4],
+        artworks[0],
         ],
       },
       followers: 721,
         createdAt: new Date(new Date().setFullYear(new Date().getFullYear() - 2)),
         monthlyUpload: 12,
     },
-
   ];
   
 

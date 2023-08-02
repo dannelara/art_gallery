@@ -1,3 +1,4 @@
+"use client"
 import PageContent from '_components/global/PageContent';
 import React from 'react';
 import CustomImage from '_components/common/Image';
@@ -12,7 +13,7 @@ import ArtCard from '_components/common/ArtCard';
 import { artists } from '../../../mockData';
 const page = ({ params }: { params: { id: string } }) => {
     const { id } = params;
-
+    const [selectedTab, setSelectedTab] = React.useState(0);
     // const fetchArtist = async () => {
     //     const res = await fetch(`${process.env.BASE_URL}/api/artist?id=${id}`, {
     //         cache: 'no-cache',
@@ -91,24 +92,43 @@ const page = ({ params }: { params: { id: string } }) => {
                         </Padding>
                     </Section>
 
-                    <Section>
+                    <Section autoHeight>
                         <Padding>
                             <div className='divider-bottom'></div>
-                            <div className='flex flex-col w-full gap-7'>
-                                <div className='flex justify-between'>
-                                    <Tab text='Images' number={artist.details.images.length} />
+                            <div className='flex w-full gap-7'>
+                                <div className='flex-1'>
+                                    <div className={`flex flex-1 items-center justify-center py-2`}>
+                                        <Tab text='Images' number={artist.details.images.length} />
+                                    </div>
+                                    <div className='border-[.2rem] border-b border-gray-400 mt-2'></div>
+                                </div>
+                                <div className='flex-1'>
+                                    <div className={`flex flex-1 items-center justify-center py-2`}>
+                                        <Tab text='Events' number={artist.details.images.length} />
+                                    </div>
+                                </div>
+                                <div className='flex-1'>
+                                    <div className={`flex flex-1 items-center justify-center py-2`}>
+                                        <Tab text='Collections' number={artist.details.images.length} />
+                                    </div>
                                 </div>
                             </div>
-
-                            <div className='mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 smd:grid-cols-3 md:grid-cols-4 my-10 w-full'>
-                                {artist.details.images.map((image, __) => (
-                                    <ArtCard key={image.src} title={image.title} creator={{ img: artist.hero, name: artist.name }} img={image.src} details={{
-                                        createdAt: artist.createdAt,
-                                        monthlyUpload: artist.monthlyUpload,
-                                    }} />
-                                ))}
-                            </div>
                         </Padding>
+                    </Section>
+                    <Section autoHeight>
+                        <div className='bg-gray-500 w-full mb-2 py-10 md:py-20'>
+
+                            <Padding>
+                                <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 smd:grid-cols-3 md:grid-cols-4 mb-10 w-full '>
+                                    {artist.details.images.map((image, __) => (
+                                        <ArtCard id={image.id} dark noDetails key={image.src} title={image.title} creator={{ img: artist.hero, name: artist.name }} img={image.src} details={{
+                                            createdAt: artist.createdAt,
+                                            monthlyUpload: artist.monthlyUpload,
+                                        }} />
+                                    ))}
+                                </div>
+                            </Padding>
+                        </div>
 
                     </Section>
                 </> : <></>
