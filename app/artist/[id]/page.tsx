@@ -32,7 +32,7 @@ const page = ({ params }: { params: { id: string } }) => {
                 <div className='w-full absolute bottom-0 h-2/6 flex justify-center md:justify-start'>
 
                     <Padding>
-                        <div className='h-36 aspect-square relative rounded-xl overflow-hidden  bg-gray-500 mx-auto md:mx-0'>
+                        <div className='h-36 aspect-square relative rounded-xl overflow-hidden bg-gray-500 mx-auto md:mx-0'>
                             <CustomImage alt='_hero' src={artist.hero} className='w-full p-1 h-full rounded-xl' />
                         </div>
                     </Padding>
@@ -60,7 +60,7 @@ const page = ({ params }: { params: { id: string } }) => {
                                 <span className='text-color text-xl font-semibold'>
                                     {artist.followers}
                                 </span>
-                                <p className='text-color text-base font-normal '>
+                                <p className='text-color text-base font-normal'>
                                     Followers
                                 </p>
                             </div>
@@ -68,7 +68,7 @@ const page = ({ params }: { params: { id: string } }) => {
 
                         <div>
                             <h2 className='text-gray-500 text-base font-normal'>Bio</h2>
-                            <span className='text-color'>The internet's friendliest kid.</span>
+                            <span className='text-color'>The friendliest kid.</span>
                         </div>
 
                         <div>
@@ -80,7 +80,6 @@ const page = ({ params }: { params: { id: string } }) => {
                                 </div>
                                 <div className='cursor-pointer'>
                                     <Discrod />
-
                                 </div>
                             </div>
                         </div>

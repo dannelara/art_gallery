@@ -91,6 +91,7 @@
   .divider-bottom {
     @apply border-[.3px] border-b border-gray-600 my-2
   }
+
   .dark-gradient {
     @apply bg-gradient-to-b from-black-gradient-start to-black-gradient-end
   }
