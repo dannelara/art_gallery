@@ -10,6 +10,14 @@ import ArtistCard from '_components/common/ArtistCard';
 import Tag from '_components/common/Tag';
 import ArtCard from '_components/common/ArtCard';
 import CustomLink from '_components/utils/CustomLink';
+import { Dialog, } from '_components/ui/dialog';
+import { Button } from '_components/ui/button';
+import { DialogTrigger } from '_components/ui/dialog';
+import { DialogContent } from '_components/ui/dialog';
+import { DialogHeader } from '_components/ui/dialog';
+import { DialogTitle } from '_components/ui/dialog';
+import { DialogDescription } from '_components/ui/dialog';
+import { DialogFooter } from '_components/ui/dialog';
 
 const Page = ({ params }: { params: { id: string } }) => {
     const { id } = params;
@@ -24,7 +32,18 @@ const Page = ({ params }: { params: { id: string } }) => {
                     <>
                         <div className='flex flex-col w-full h-80 relative md:h-[40rem] object-cover aspect-square'>
                             <CustomImage src={selectedArtwork.src ?? ""} alt='_hero' className='w-full h-full' />
+                            <Dialog>
+                                <DialogTrigger asChild className='absolute right-2 bottom-2'>
+                                    <Button variant="outline" className='dark:bg-white dark:text-black'>View full image</Button>
+                                </DialogTrigger>
+                                <DialogContent className="h-[60vh] md:h-[90vh] max-w-[90vw] md:max-w-[80vw]">
+                                    <div className="w-full h-full relative object-contain">
+                                        <CustomImage src={selectedArtwork.src ?? ""} alt='_hero' className='w-full h-full' contain />
+                                    </div>
+                                </DialogContent>
+                            </Dialog>
                         </div>
+
 
                         <Section>
                             <Padding>
@@ -70,7 +89,7 @@ const Page = ({ params }: { params: { id: string } }) => {
                         </Section>
                     </>) : <></>
             }
-        </PageContent>
+        </PageContent >
     );
 };
 

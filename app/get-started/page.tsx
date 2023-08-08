@@ -2,7 +2,14 @@ import Button from '_components/common/Button';
 import CustomImage from '_components/common/Image';
 import Input from '_components/global/Input';
 import PageContent from '_components/global/PageContent';
+import { Metadata } from 'next';
 import React from 'react';
+import sharedMetadata from '_shared/Meta';
+
+export const metadata: Metadata = {
+    ...sharedMetadata,
+    title: "Get started"
+}
 
 const page = () => {
     return (

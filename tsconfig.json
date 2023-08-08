@@ -30,7 +30,8 @@
       ],
       "@/components/common/*": [
         "components/common/*"
-      ]
+      ],
+      "@lib/*": ["_lib/*"]
     }
   },
   "include": [

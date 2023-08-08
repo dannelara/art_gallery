@@ -9,6 +9,7 @@ import Subscribe from '_components/_sections/Subscribe'
 import PageContent from '_components/global/PageContent'
 import React from 'react'
 import { artists } from '../mockData'
+
 export default function Home() {
 
   // const fetchArtists = async () => {

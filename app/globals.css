@@ -2,97 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
   }
-}
-
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  --purple-gradient: linear-gradient(170deg, #A259FF 0%, #377DF7 100%);
-  --purple-gradient2: linear-gradient(149deg, #A259FF 0%, #FF6250 100%);
-  transition: all 0.1s ease-in-out;
-}
-
-.purple_gradient {
-  background: var(--purple-gradient);
-}
-
-.tilt {
-
-  animation: tiltImage 10s linear infinite;
-}
-
-.tilt img {
-  transform: rotateX(-20deg);
-}
-@keyframes tiltImage {
-  0% {
-    transform: skewY(5deg);
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --foreground-rgb: 255, 255, 255;
+      --background-start-rgb: 0, 0, 0;
+      --background-end-rgb: 0, 0, 0;
+    }
   }
-  50% {
-    transform: skewY(-5deg);
+  
+  /* body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
+  } */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --purple-gradient: linear-gradient(170deg, #A259FF 0%, #377DF7 100%);
+    --purple-gradient2: linear-gradient(149deg, #A259FF 0%, #FF6250 100%);
+    /* transition: all 0.1s ease-in-out; */
   }
-  100% {
-    transform: skewY(5deg);
+  
+  .purple_gradient {
+    background: var(--purple-gradient);
   }
-}
-
-
-@layer components {
-  .link {
-    @apply px-5 text-base font-semibold dark:text-white;
+  
+  .tilt {
+  
+    animation: tiltImage 10s linear infinite;
   }
-  .text-color {
-    @apply dark:text-white
+  
+  .tilt img {
+    transform: rotateX(-20deg);
   }
 
-  .scale {
-    @apply hover:scale-110 ease-in-out duration-200 cursor-pointer border-2 border-transparent hover:border-white hover:z-[99999]
+  @keyframes tiltImage {
+    0% {
+      transform: skewY(5deg);
+    }
+    50% {
+      transform: skewY(-5deg);
+    }
+    100% {
+      transform: skewY(5deg);
+    }
   }
-
-  .scale-no-border {
-    @apply hover:scale-110 ease-in-out duration-200 cursor-pointer
+  
+  
+  @layer components {
+    .link {
+      @apply px-5 text-base font-semibold dark:text-white;
+    }
+    .text-color {
+      @apply dark:text-white
+    }
+  
+    .scale {
+      @apply hover:scale-110 ease-in-out duration-200 cursor-pointer border-2 border-transparent hover:border-white hover:z-[99999]
+    }
+  
+    .scale-no-border {
+      @apply hover:scale-110 ease-in-out duration-200 cursor-pointer
+    }
+  
+    .section-heading {
+      @apply text-color text-2xl font-semibold
+    }
+  
+    .section-subHeading {
+      @apply text-color text-base font-normal 
+    }
+  
+    .link-secondary {
+      @apply text-gray-paper text-base font-normal
+    }
+  
+    .divider-bottom {
+      @apply border-[.3px] border-b border-gray-600 my-2
+    }
+  
+    .dark-gradient {
+      @apply bg-gradient-to-b from-black-gradient-start to-black-gradient-end
+    }
   }
-
-  .section-heading {
-    @apply text-color text-2xl font-semibold
-  }
-
-  .section-subHeading {
-    @apply text-color text-base font-normal 
-  }
-
-  .link-secondary {
-    @apply text-gray-paper text-base font-normal
-  }
-
-  .divider-bottom {
-    @apply border-[.3px] border-b border-gray-600 my-2
-  }
-
-  .dark-gradient {
-    @apply bg-gradient-to-b from-black-gradient-start to-black-gradient-end
-  }
-}

@@ -5,7 +5,6 @@ import BrushIcon from '_assets/icons/categories/BrushIcon';
 import SwatchesIcon from '_assets/icons/categories/SwatchesIcon';
 import MusicIcon from '_assets/icons/categories/MusicIcon';
 import CameraIcon from '_assets/icons/categories/CameraIcon';
-import VideoCamera from '_assets/icons/categories/VideoCamera';
 import WandIcon from '_assets/icons/categories/WandIcon';
 import BasketBallIcon from '_assets/icons/categories/BasketBallIcon';
 import PlanetIcon from '_assets/icons/categories/PlanetIcon';
