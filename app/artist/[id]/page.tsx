@@ -117,7 +117,7 @@ const Page = ({ params }: { params: { id: string } }) => {
                         </Padding>
                     </Section>
                     <Section autoHeight>
-                        <div className='bg-gray-500 w-full mb-2 py-10 md:py-20'>
+                        <div className='bg-gray-500 w-full mb-1 py-10 md:py-20'>
 
                             <Padding>
                                 <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 smd:grid-cols-3 md:grid-cols-4 mb-10 w-full '>

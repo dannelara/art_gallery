@@ -14,7 +14,7 @@ const GetStarted = () => {
                     <div className='relative py-4 max-h-[22.313rem] aspect-square flex items-center justify-center xmd:hidden tilt'>
                         <CustomImage className='w-full h-full rounded-xl overflow-hidden border-2 border-white' src='/images/new/6.png' alt='heading' />
                     </div>
-                    <Link href="/get-started"><Button text='Get Started' type='PRIMARY' variant='FILLED' /></Link>
+                    <Link href="/get-started" className='py-4 px-8 bg-blue-600 rounded-xl text-center text-white'>Get Started</Link>
                     <div className='flex gap-7 justify-between mt-10'>
                         <div className='flex flex-col'>
                             <span className='text-xl text-color font-bold'>240k+</span>

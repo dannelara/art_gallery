@@ -11,7 +11,7 @@ const ArtistCard = ({ id, hero, name, details, noDetails, small }: Artist & { no
                     <CustomImage className='h-full w-full' src={`${hero}`} alt={`${hero}`} />
                 </div>
                 <div className={`${noDetails ? "hidden" : "flex"} flex-col gap-1 `}>
-                    <h2 className={`text-white ${small ? "text-base" : "text-xl font-semibold"}`}>{name}</h2>
+                    <h2 className={`${small ? "text-color text-base" : "text-white text-xl font-semibold"}`}>{name}</h2>
                     <div className={`${small ? "hidden" : "flex gap-1"}`}>
                         <span className='text-gray-500 text-base'>Images:</span>
                         <span className='text-white text-base'>{details.images.length}</span>
