@@ -18,7 +18,8 @@ import CustomImage from '_components/common/Image';
 //     title: "Get started"
 // }
 
-const page = () => {
+const Page = () => {
+
     const form = useForm<z.infer<typeof registerFormSchema>>({
         resolver: zodResolver(registerFormSchema),
         defaultValues: {
@@ -99,4 +100,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default Page;

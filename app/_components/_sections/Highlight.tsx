@@ -22,7 +22,6 @@ const Highlight = () => {
                             <ArtistCard id={artists[0].id} hero={artists[0].hero} name='Salomon' details={artists[0].details} followers={artists[0].followers} createdAt={artists[0].createdAt} monthlyUpload={artists[0].monthlyUpload} />
 
                         </div>
-
                         <div className='md:hidden'>
                             <h1 className='text-white text-3xl font-semibold'>
                                 Gazer_1

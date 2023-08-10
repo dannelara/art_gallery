@@ -130,7 +130,6 @@ const Page = ({ params }: { params: { id: string } }) => {
                                 </div>
                             </Padding>
                         </div>
-
                     </Section>
                 </> : <></>
             }
